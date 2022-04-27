@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <title>Zapoznanie z bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Kancelaria adwokacka</title>
+    <body>
+       <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-lg-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">ChaosCorp.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#main" class="nav-link">Strona główna</a></li>
+                        <li class="nav-item"><a href="#aboutUs" class="nav-link">O nas</a></li>
+                        <li class="nav-item"><a href="#ourTeam" class="nav-link">Nasz zespół</a></li>
+                        <li class="nav-item"><a href="#News" class="nav-link">Aktualności</a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-link">Kontakt</a></li>
+                        <li class="nav-item"><a href="#Reg" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Regulamin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- header -->
+        <header id="main" class="bg-cover header-size">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-md-6 text-white">
+                        <div class="quote-border rounded">
+                        <blockquote class="blockquote">
+                            <h1>Ignorantia iuris nocet</h1>
+                            <h2>Nieznajomość prawa szkodzi</h2>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Paremia prawnicza wyrażająca <cite title="Source Title">podstawową zasadę prawa</cite>, wywodząca się z prawa rzymskiego.
+                        </figcaption><br>
+                    </div>
+                        <p class="text-white m-4">Zajmujemy się profesjonalnym doradztwem, prowadzimy Twoje sprawy w sądzie, sporządzamy wnioski oraz wyciągamy z tarapatów. Współpracując z nami zyskasz najlepsze doradztwo prawne.</p>
+                        <a href="#aboutUs" class="btn btn-outline-secondary text-white fw-bold m-4">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- O nas -->
+        <section id="aboutUs" class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h1>Nasze wyniki</h1>
+                    </div>
+                </div>
+                <!-- licznik -->
+                <div id="results" class="row text-center">
+                    <div class="col-12 my-3 my-sm-0 col-sm-4 box-color">
+                        <i class="bi bi-hand-thumbs-up fs-1 icon-color p-2"></i>
+                        <div class="counter display-6 p-2" data-count="852">0</div>
+                        <div class="description p-2">Tylu zadowolonych klientów</div>
+                    </div>
+                    <div class="col-12 my-3 my-sm-0 col-sm-4 box-color">
+                        <i class="bi bi-check-circle fs-1 icon-color p-2"></i>
+                        <div class="counter display-6 p-2" data-count="740">0</div>
+                        <div class="description p-2">Tyle spraw rozwiązaliśmy</div>
+                    </div>
+                    <div class="col-12 my-3 my-sm-0 col-sm-4 box-color">
+                        <i class="bi bi-person-plus fs-1 icon-color p-2"></i>
+                        <div class="counter display-6 p-2" data-count="131">0</div>
+                        <div class="description p-2">Tylu zatrudniamy prawników</div>
+                    </div>
+                </div>
+                <!-- usługi -->
+                <div class="row">
+                    <div class="col-12 text-center my-4">
+                        <h1>Czym się zajmujemy</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 my-3 d-flex align-items-stretch">
+                        <div class="card card-hover">
+                            <img src="./img/prawoCywilne.jpg" alt="obrazek" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-people-fill fs-1 default-icon pe-4"></i>Prawo cywilne</h5>
+                                    <div class="card-text">
+                                        Nasi specjaliści znający się na przepisach prawa cywilnego pomogą Ci w sprawach takich jak: nabycie spadku, czy zawarcie umowy najmu.
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 d-flex align-items-stretch">
+                        <div class="card card-hover">
+                            <img src="./img/prawoPracy.jpg" alt="obrazek" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-briefcase-fill fs-1 pe-4"></i>Prawo pracy</h5>
+                                    <div class="card-text">
+                                        Perfekcyjna znajomość prawa pracy, to podstawa aby wyeliminować wiele problemów oraz zapewnić właściwe standardy pracy.
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 d-flex align-items-stretch">
+                        <div class="card card-hover">
+                            <img src="./img/prawoKarne.jpg" alt="obrazek" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-shield-shaded fs-1 pe-4"></i>Prawo karne</h5>
+                                    <div class="card-text">
+                                        Kancelaria udziela wszechstronnej obrony w postępowaniach karnych. Zajmujemy się wieloma gałęziami prawa karnego, w tym: 
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Prawo karne gospodarcze</li>
+                                            <li class="list-group-item">Prawo karne rynku finansowego</li>
+                                            <li class="list-group-item">Prawo karne skarbowe i podatkowe</li>
+                                          </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 d-flex align-items-stretch">
+                        <div class="card card-hover">
+                            <img src="./img/prawoHandlowe.jpg" alt="obrazek" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-currency-exchange fs-1 pe-4"></i>Prawo handlowe</h5>
+                                    <div class="card-text">
+                                        Zamierzasz założyć spółkę prawa handlowego lub pozbyć się niewygodnego wspólnika? - Skontaktuj się z nami.
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 d-flex align-items-stretch">
+                        <div class="card card-hover">
+                            <img src="./img/odszkodowania.jpg" alt="obrazek" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-graph-down-arrow fs-1 pe-4"></i>Odszkodowania</h5>
+                                    <div class="card-text">
+                                        Na codzień współpracujemy z największymi ubezpieczycielami w kraju, dzięki czemu posiadamy bogate doświadczenie.
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-3 d-flex align-items-stretch">
+                        <div class="card card-hover">
+                            <img src="./img/poradyPrawne.jpg" alt="obrazek" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-info-circle fs-1 pe-4"></i>Porady prawne</h5>
+                                    <div class="card-text">
+                                        Świadczymy pełen wachlarz usług doradczych zarówno stacjonarnie, jak i poprzez internet.
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- nasz team -->
+        <section id="ourTeam">
+            <div class="container-fluid bg-team text-white">
+                <div class="overlay"></div>
+                <h1 class="text-center p-3">Współpracuj z najlepszymi</h1>
+                <p class="text-center p-3 fst-italic">Poznaj naszych specjalistów.</p>
+
+                <div class="container my-3 text-black">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-4 col-lg-3 my-3 d-flex align-items-stretch">
+                            <div class="person1 card d-flex align-items-center" data-counter = "0">
+                                <img src="./img/persons/woman1.jpg" alt="worker1" class="img-fluid mt-3 person-img">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Joanna Kowalczyk</h4>
+                                    <h5 class="card-subtitle text-black-50">Specjalistka ds. prawa karnego</h5>
+                                    <hr>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 my-3 d-flex align-items-stretch">
+                            <div class="person2 card d-flex align-items-center" data-counter = "1">
+                                <img src="./img/persons/men3.jpg" alt="worker1" class="img-fluid mt-3 person-img">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Edward Nowak</h4>
+                                    <h5 class="card-subtitle text-black-50">Ekspert prawa handlowego</h5>
+                                    <hr>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 my-3 d-flex align-items-stretch">
+                            <div class="person3 card d-flex align-items-center" data-counter = "2">
+                                <img src="./img/persons/woman2.jpg" alt="worker1" class="img-fluid mt-3 person-img">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Wiktoria Polak</h4>
+                                    <h5 class="card-subtitle text-black-50">Specjalistka ds. prawa cywilnego</h5>
+                                    <hr>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-none d-md-flex text-white">
+                        <div class="col-6 text-start slideLeft"><i class="bi bi-arrow-left-circle-fill fs-1"></i></div>
+                        <div class="col-6 text-end slideRight"><i class="bi bi-arrow-right-circle-fill fs-1"></i></div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ostatnie newsy -->
+        <section id="News">     
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="fw-bold text-black m-4 text-center">Ostatnie newsy</h1>
+                    </div>
+                <div class="d-flex justify-content-evenly flex-wrap" id="parentNews">
+
+                    <!-- <div class="col-12 col-md-6 col-lg-4 card card-no-cursor m-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col">
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                    <img src="https://randomuser.me/api/portraits/med/women/13.jpg" class="rounded-circle" style="max-width:50px; margin-left: 0;"  alt="post img">
+                                    <span class="text-primary">Testowa Test</span>
+                                </h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              </div> 
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col">
+                                <img src="https://img.dummyapi.io/photo-1589469526983-0887ebe10072.jpg" class="img-fluid rounded-start ms-3" alt="...">
+                                <p class="card-text"><small class="text-muted ms-3">Dodano 3 min. temu</small></p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Kontakt -->
+        <section class="rounded mt-3" id="Contact">
+            <div class="box-newsletter container-fluid text-center">
+                    <div class="text-newsletter">
+                        <h1 class="text-center font-weight p-3 text-white">Potrzebujesz darmowej pomocy prawnej? - Napisz do nas.</h1>
+                        <p class="text-white">Otrzymasz pełny pakiet informacji w skład, którego wchodzą: potencjalne rozwiązania oraz konsekwencje, naszą sugestię, a także propozycję współpracy dostosowaną do Twoich potrzeb.</p>
+                        <p class="text-white">Wypełnij poniższy formularz i wyślij nam opis Twojego problemu. Nasi prawnicy zajmą się Twoją sprawą w ciągu <strong>24h</strong>.</p>
+                        <form action="">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-12 col-lg-4 m-3 text-white">
+                                    <label for="emailAdress" class="form-label">Podaj swój adres email</label>
+                                    <input type="email" class="form-control" id="emailAdress" placeholder="przyklad@gmail.com" required>
+                                </div>
+                                <div class="col-12 col-lg-4 m-3 text-white">
+                                    <label for="problemDescription" class="form-label">Opisz swój problem</label>
+                                    <textarea class="form-control" id="problemDescription" rows="1" placeholder="Wpisz tutaj swoją wiadomość..." required></textarea>
+                                </div>
+                                <div class="col-12 text-white">
+                                    <label for="checkReg" class="form-label">Zapoznałem się z <a href="#" class="text-success" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">regulaminem</a>.</label>
+                                    <input type="checkbox" id="checkReg" required>
+                                </div>
+                                <div class="col-12 text-white">
+                                    <button class="btn btn-success rounded m-3" type="submit">Wyślij</button>
+                                </div>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+        </section>
+
+        <!-- regulamin -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Regulamin współpracy z kancelarią</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>I. POSTANOWIENIA OGÓLNE</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae unde, nostrum aspernatur ipsa repellat necessitatibus modi iure explicabo dolores cumque suscipit iusto porro nam labore non, autem debitis voluptatem reiciendis sapiente. Nemo repudiandae saepe tempore commodi facere dolores, iusto aperiam.</p>
+                    <ol>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, voluptates dolores. Iste.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet consequuntur ea ullam cum sunt maxime id voluptatem temporibus dolorem! Ipsum totam pariatur consectetur autem!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti alias voluptate commodi fugit minima quos dicta omnis minus?</li>
+                    </ol>
+                    <h4>II. WARUNKI WSPÓŁPRACY</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, mollitia esse. Hic provident impedit qui voluptates, dolores illo nam itaque architecto tempora assumenda maxime perferendis consectetur maiores perspiciatis doloribus voluptatibus necessitatibus? Cum dicta provident officiis nostrum. Aperiam ipsum ipsam eos?</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, modi.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita!</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, at amet.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, unde!</li>
+                    </ul>
+                    <h4>III. ODSTĄPIENIE OD UMOWY</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus vel fugit perspiciatis id quaerat repellendus ratione nulla autem vitae quos.</p>
+                    <ol>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, obcaecati!</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zamknij</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white">
+            <div class="container-fluid">
+                <div class="row pt-3">
+                    <div class="col-md-4 text-start fs-4">
+                        <a href="#" class="navbar-brand text-white">ChaosCorp.</a>
+                    </div>
+                    <div class="col-md-4 text-center fs-6">
+                        <p>CopyRight © 2021r.</p>
+                    </div>
+                    <div class="col-md-4 text-end fs-4">
+                        <a href="#"><i class="bi bi-facebook px-2"></i></a>
+                        <a href="#"><i class="bi bi-twitter px-2"></i></a>
+                        <a href="#"><i class="bi bi-youtube px-2"></i></a>
+                        <a href="#"><i class="bi bi-instagram px-2"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between">
+                        <p style="margin-bottom: 0;">Telefon: <a href="tel:+48123456789">123-456-789</a></p>
+                        <p>Email: <a href="mailto:adres@gmail.com">Kancelaria@gmail.com</a> </p>
+                        <p>Adres: <a target="_blank" href="https://goo.gl/maps/mHRHuPALV2seSzhB7">Katowice ul.Testowa 13</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- moje skrypty -->
+    <script src="./scripts/Post.js"></script>
+    <script src="./scripts/main.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
